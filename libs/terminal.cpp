@@ -1,3 +1,25 @@
+String terminal() {
+	if (Serial.available() > 0) {
+		String s = Serial.read();
+		if(getArg(s, " ", 0) == "timer") {
+			switch(getArg(s, " ", 1)){
+				case "-s":
+					return "start:0";
+					break;
+				case "-e":
+					return "interupt:0";
+					break;
+				case "-t":
+					return "setTime:" + getArg(s, " ", 2);
+					break
+			}
+		}
+		else {
+			Serial.println("Invalid syntax. Check documentation for more information.");
+		}
+	}
+}
+
 String getArg(String data, char separator, int index)
 {
     int found = 0;
