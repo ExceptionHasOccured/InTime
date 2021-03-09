@@ -11,7 +11,10 @@ String terminal() {
 					break;
 				case "-t":
 					return "setTime:" + getArg(s, " ", 2);
-					break
+					break;
+				default:
+					return "null";
+					break;
 			}
 		}
 		else {
