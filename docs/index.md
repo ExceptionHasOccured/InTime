@@ -1,4 +1,3 @@
 ## Contents
-- Hardware
-- Software
-- Libraries
+- [Hardware](https://exceptionhasoccured.github.io/InTime/hardware)
+- [Software](https://exceptionhasoccured.github.io/InTime/software)

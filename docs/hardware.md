@@ -12,6 +12,7 @@ This section of the documentation explains the way the hardware is setup and lai
 The microcontroller will be used to send and control electrical signals used by components.
 
 ## Single Colour LEDs
+![Single Colour LEDS](https://exceptionhasoccured.github.io/InTime/_img/image4.jpg)
 These LEDs will be setup in a row of 4 with alternating colours (red and green in this case). The purpose is to indicate time in 1/4 millisecond intervals.
 ### Interactions
 Every 50 milliseconds a variable called *milliCount* will increase by 50.
@@ -43,6 +44,7 @@ Every 50 milliseconds a variable called *milliCount* will increase by 50.
 - All LEDs are turned off
 
 ## RGB LED
+![RGB LED](https://exceptionhasoccured.github.io/InTime/_img/image3.png)
 In the software, the timer will be able to be started, stopped and have a time limit set using commands in the Arduino Serial Monitor (see *Commands* for more information).
 ### Interations
 **Blue light:**
@@ -61,6 +63,7 @@ In the software, the timer will be able to be started, stopped and have a time l
 - *timeElapsed* is set to 0
 
 ## Buzzer
+![Buzzer](https://exceptionhasoccured.github.io/InTime/_img/image2.png)
 The buzzer acts as another form of time indication, just on a larger scale that is counted in 10 second periods.
 ### Interactions
 Variable *buzzerTime* increases by 50 every 50 milliseconds.
