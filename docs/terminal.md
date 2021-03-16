@@ -1,4 +1,4 @@
-# Terminal Commands
+# Terminal Commands (Deprecated)
 This section of the documentation outlines the correct commands to be used within the Serial Monitor.
 
 ## timer -s

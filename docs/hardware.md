@@ -14,7 +14,7 @@ The microcontroller will be used to send and control electrical signals used by 
 ## Single Colour LEDs
 These LEDs will be setup in a row of 4 with alternating colours (red and green in this case). The purpose is to indicate time in 1/4 millisecond intervals.
 ### Interactions
-Every millisecond a variable called *milliCount* will increase by 1.
+Every 50 milliseconds a variable called *milliCount* will increase by 50.
 
 **0 to 250 milsec lapsed:**
 - First LED will be turned on
@@ -52,7 +52,7 @@ In the software, the timer will be able to be started, stopped and have a time l
 
 **Green light:**
 - Timer has started counting
-- Every millisecond the variable *timeElasped* is increased by one
+- Every 50 milliseconds the variable *timeElasped* is increased by one
 
 
 **Red light, Blinking:**
@@ -63,7 +63,7 @@ In the software, the timer will be able to be started, stopped and have a time l
 ## Buzzer
 The buzzer acts as another form of time indication, just on a larger scale that is counted in 10 second periods.
 ### Interactions
-Variable *buzzerTime* increases by 1 every millisecond.
+Variable *buzzerTime* increases by 50 every 50 milliseconds.
 **Every 1 second (*buzzerCount* == 1000, 2000, ..., 9000):**
 - Medium pitch
 - Quiet
@@ -77,4 +77,4 @@ Variable *buzzerTime* increases by 1 every millisecond.
 - *buzzerCount* is set to 0
 
 ## Footnote
-Running this timer for a long period may cause the variables/counter to become desynced with an external timer due to Arduino data transfer rate.
+Running this timer for a long period may cause the variables/counter to become desynced with an external timer due to Arduino data transfer rate. Counting in 50 millisecond intervals is used to mitigate this partially.
