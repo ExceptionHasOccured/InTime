@@ -2,7 +2,7 @@
 This section of the documentation explains the code of the device in a psuedo-code style.
 
 ## Variables, Including Libraries and Defining Pins
-```
+```cpp
 // Channels of RGB LED
 #define RGB_red 10
 #define RGB_green 9 
@@ -32,7 +32,7 @@ int timeLimit = 60000;
 ## void setup()
 Runs once on program start
 ### Code
-```
+```cpp
 void setup() {
 	// Setup output for Channels of RGB LED
 	pinMode(RGB_red, OUTPUT);
@@ -59,7 +59,7 @@ void setup() {
 ## void loop()
 Runs constantly from program start
 ### Code
-```
+```cpp
 void loop() {
   if(isCounting){
     setRGB(0, 255, 0);
@@ -140,7 +140,7 @@ void loop() {
 ## Function: void setRGB(int a, int b, int c)
 Controls the amount of voltage provided to red, green and blue channels of the RGB LED using a, b and c as inputs
 ### Code
-```
+```cpp
 void setRGB(int a, int b, int c){
   analogWrite(RGB_red, a);
   analogWrite(RGB_green, b);
@@ -151,7 +151,7 @@ void setRGB(int a, int b, int c){
 ## Function: void setFourLED(int i)
 Controls how many of the four LEDs will be on based on i
 ### Code
-```
+```cpp
 void setFourLED(int i){
   if(i == 1){
     digitalWrite(LED_1, HIGH);
