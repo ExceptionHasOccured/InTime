@@ -44,7 +44,7 @@ Every 50 milliseconds a variable called *milliCount* will increase by 50.
 - All LEDs are turned off
 
 ## RGB LED
-![RGB LED](https://exceptionhasoccured.github.io/InTime/img/image3.png)
+![RGB LED](https://exceptionhasoccured.github.io/InTime/img/image3.jpg)
 In the software, the timer will be able to be started, stopped and have a time limit set using commands in the Arduino Serial Monitor (see *Commands* for more information).
 ### Interations
 **Blue light:**
@@ -63,7 +63,7 @@ In the software, the timer will be able to be started, stopped and have a time l
 - *timeElapsed* is set to 0
 
 ## Buzzer
-![Buzzer](https://exceptionhasoccured.github.io/InTime/img/image2.png)
+![Buzzer](https://exceptionhasoccured.github.io/InTime/img/image2.jpg)
 The buzzer acts as another form of time indication, just on a larger scale that is counted in 10 second periods.
 ### Interactions
 Variable *buzzerTime* increases by 50 every 50 milliseconds.
