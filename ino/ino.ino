@@ -72,9 +72,9 @@ void loop() {
       buzzerCount == 7000 ||
       buzzerCount == 8000 ||
       buzzerCount == 9000) {
-      analogWrite(BUZZER, 175);
+      analogWrite(BUZZER, 150);
     }
-    else if(buzzerCount == 9500){
+    else if(buzzerCount == 10000){
       analogWrite(BUZZER, 255);
     }
     else {
@@ -85,7 +85,7 @@ void loop() {
     if(milliCount == 1000){
       milliCount = 0;
     }
-    if(buzzerCount == 9500){
+    if(buzzerCount == 10000){
       buzzerCount = 0;
     }
 

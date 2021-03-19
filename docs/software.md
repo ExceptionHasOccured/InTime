@@ -1,7 +1,7 @@
 # Software Code
 This section of the documentation explains the code of the device in a psuedo-code style.
 
-## Variables, Including Libraries and Defining Pins
+## Variables and Defining Pins
 ```cpp
 // Channels of RGB LED
 #define RGB_red 10
@@ -22,7 +22,7 @@ int timeElapsed = 0; // Total time elapsed
 int milliCount = 0; // Milliseconds elapsed in a second, resets at 1000
 int buzzerCount = 0; // Milliseconds elapsed over a 10 seconds period, resets at 10000
 
-//
+// Is the timer counting
 bool isCounting = true;
 
 // Time until auto stop
@@ -91,9 +91,9 @@ void loop() {
       buzzerCount == 7000 ||
       buzzerCount == 8000 ||
       buzzerCount == 9000) {
-      analogWrite(BUZZER, 175);
+      analogWrite(BUZZER, 150);
     }
-    else if(buzzerCount == 9500){
+    else if(buzzerCount == 10000){
       analogWrite(BUZZER, 255);
     }
     else {
@@ -104,7 +104,7 @@ void loop() {
     if(milliCount == 1000){
       milliCount = 0;
     }
-    if(buzzerCount == 9500){
+    if(buzzerCount == 10000){
       buzzerCount = 0;
     }
 
