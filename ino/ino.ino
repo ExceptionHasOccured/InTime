@@ -44,9 +44,9 @@ void setup() {
 void loop() {
   if(isCounting){
     setRGB(0, 255, 0);
-    timeElapsed += 50;
-    milliCount += 50;
-    buzzerCount += 50;
+    timeElapsed += 100;
+    milliCount += 100;
+    buzzerCount += 100;
 
     // Colouring the four LEDs
     if(milliCount >= 0 && milliCount <=249){
@@ -101,7 +101,7 @@ void loop() {
       Serial.println("Timer has finished counting");
     }
     else {
-      delay(50);
+      delay(100);
       Serial.println("[ timeElapsed: " + String(timeElapsed) + ", milliCount: " + String(milliCount) + ", buzzerCount: " + String(buzzerCount) + " ]");
     }
   }
