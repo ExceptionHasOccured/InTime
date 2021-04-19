@@ -1,3 +1,5 @@
+[<-- Return to Home](https://exceptionhasoccured.github.io/InTime/index)
+
 # Hardware Setup
 
 This section of the documentation explains the way the hardware is setup and lain out as well as interaction with software.
